@@ -42,8 +42,7 @@ Licensed under the MIT License.
 
 ## 📬 Contact Us
 
-Got questions? Follow us on Instagram! 
-@mesa.u.hacks
+Got questions? email us at: csuebmesau@gmail.com
 
 Let’s hack the future! 🚀
 
