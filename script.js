@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   // Set the exact date and time of the hackathon
-  var countDownDate = new Date("Sep 13, 2025 09:00:00").getTime();
+  var countDownDate = new Date("Sep 25, 2026 09:00:00").getTime();
 
   // Create a message element
   var messageElement = document.createElement("div");
