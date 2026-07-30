@@ -18,6 +18,7 @@ const members = [
     group: "Student committee",
     name: "Kyle Le",
     affiliation: "Cal State East Bay",
+    photo: "assets/team/Kyle.jpeg",
     major: "Computer Science, minor in Mathematics",
     year: "Class of 2027",
     strengths: "Strategic thinker, problem solver, innovative",
@@ -25,12 +26,23 @@ const members = [
     reliedOn: "Implementing and spitballing ideas.",
     energy: "Intriguing work that requires critical thinking.",
     growth: "Improving one-on-one communication and improvisation while speaking.",
-    fact: "First got into computer science by learning Java and Python."
+    fact: "First got into computer science by learning Java and Python.",
+    linkedIn: "https://www.linkedin.com/in/kyle-q-le/\n"
   },
   {
     group: "Student committee",
-    name: "Aneesh Pradhan",
-    affiliation: "Cal State East Bay"
+    name: "Aneesh",
+    affiliation: "Cal State East Bay",
+    //photo: "assets/team/.jpeg",
+    major: "Computer Science",
+    year: "Senior",
+    strengths: "Creative, adaptable, analytical",
+    skills: "Programming, hardware and electronics, public speaking, volunteer outreach, research, information organization, technical problem-solving, and idea development",
+    reliedOn: "Researching unfamiliar topics, organizing information, handling deep technical work, and thinking of potential ideas and solutions.",
+    energy: "Researching new topics, working on technical projects, completing repetitive tasks, organizing information, and developing solutions to complex problems.",
+    growth: "Improving my ability to lead complex, long-term projects by developing stronger planning, sustained collaboration, and project management skills.",
+    fact: "I love rhythm games and am working on a score tracker for one!",
+    linkedIn: "https://www.linkedin.com/in/aneeshpradhan/"
   },
   {
     group: "Student committee",
@@ -157,6 +169,7 @@ const members = [
     group: "Lead Organizers",
     name: "Travis Nelson",
     affiliation: "Cal State East Bay",
+    photo: "assets/team/Travis.jpg",
     major: "Sociology B.A., Organization & Leadership M.A.",
     year: "Graduated",
     strengths: "Creative, public speaker, fast learner",
@@ -172,6 +185,7 @@ const members = [
     group: "Lead Organizers",
     name: "Cherlyn Romarri",
     affiliation: "Cal State East Bay",
+    photo: "assets/team/Cherlyn.jpg",
     major: "Mathematics M.A.",
     year: "Graduated",
     strengths: "Organized, Reliable, Detail-Oriented",
