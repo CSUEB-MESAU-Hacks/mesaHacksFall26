@@ -1,88 +1,6 @@
 const members = [
   {
     group: "Student committee",
-    name: "Wail Mohammed",
-    affiliation: "Cal State East Bay",
-    photo: "assets/team/wail-mohammed.webp",
-    major: "Computer Science",
-    year: "Graduating December 2026",
-    strengths: "Hardworking, fast learner, problem solver",
-    skills: "Programming, photography, documentation, communication, mentoring, teamwork, public speaking, networking, community engagement, and problem solving",
-    reliedOn: "Helping solve problems, getting things done, and supporting others when they need help.",
-    energy: "Working with people, learning new things, and contributing to projects that make a real impact.",
-    growth: "Becoming more confident speaking up, leading groups, and helping others grow as leaders.",
-    fact: "Is multilingual and has lived in or visited 11 countries across three continents.",
-    linkedIn: "https://www.linkedin.com/in/wailmohammed/\n"
-  },
-  {
-    group: "Student committee",
-    name: "Kyle Le",
-    affiliation: "Cal State East Bay",
-    photo: "assets/team/Kyle.jpeg",
-    major: "Computer Science, minor in Mathematics",
-    year: "Class of 2027",
-    strengths: "Strategic thinker, problem solver, innovative",
-    skills: "Programming, UI/UX design, graphic design, public speaking, and facilitation",
-    reliedOn: "Implementing and spitballing ideas.",
-    energy: "Intriguing work that requires critical thinking.",
-    growth: "Improving one-on-one communication and improvisation while speaking.",
-    fact: "First got into computer science by learning Java and Python.",
-    linkedIn: "https://www.linkedin.com/in/kyle-q-le/\n"
-  },
-  {
-    group: "Student committee",
-    name: "Aneesh",
-    affiliation: "Cal State East Bay",
-    //photo: "assets/team/.jpeg",
-    major: "Computer Science",
-    year: "Senior",
-    strengths: "Creative, adaptable, analytical",
-    skills: "Programming, hardware and electronics, public speaking, volunteer outreach, research, information organization, technical problem-solving, and idea development",
-    reliedOn: "Researching unfamiliar topics, organizing information, handling deep technical work, and thinking of potential ideas and solutions.",
-    energy: "Researching new topics, working on technical projects, completing repetitive tasks, organizing information, and developing solutions to complex problems.",
-    growth: "Improving my ability to lead complex, long-term projects by developing stronger planning, sustained collaboration, and project management skills.",
-    fact: "I love rhythm games and am working on a score tracker for one!",
-    linkedIn: "https://www.linkedin.com/in/aneeshpradhan/"
-  },
-  {
-    group: "Student committee",
-    name: "Derek Du",
-    affiliation: "Cal State East Bay",
-    photo: "assets/team/derek-du.webp",
-    major: "Computer Science",
-    year: "Senior",
-    strengths: "Reliable, analytical, detail-oriented",
-    skills: "Programming, app development, UI/UX design, event planning, project management, logistics, documentation, social media, graphic design, facilitation, mentoring, and networking",
-    reliedOn: "Troubleshooting and finding the next steps.",
-    energy: "Work where he can figure things out through trial and error.",
-    growth: "Becoming more confident speaking up and sharing ideas.",
-    fact: "Performed at the 2015 Cure Bowl halftime show as part of the SJSU Marching Band.",
-    linkedIn: "https://www.linkedin.com/in/derek-du/\n"
-
-  },
-  {
-    group: "Student committee",
-    name: "Aaron Nguyen",
-    affiliation: "Planning Committee",
-    photo: "assets/team/aaron-nguyen.webp",
-    major: "Data Science",
-    year: "Second year",
-    strengths: "Strategic thinker, detail-oriented, relationship builder",
-    skills: "Programming, project management, documentation, photography, recruiting, facilitation, and outreach coordination",
-    reliedOn: "Organized communication and plan implementation.",
-    energy: "Hands-on, team-oriented work.",
-    growth: "Organizing his thoughts more clearly when he is excited about an idea.",
-    fact: "Loves rock climbing and has an identical twin.",
-    linkedIn: "https://www.linkedin.com/in/aaron-nguyen22?utm_source=share_via&utm_content=profile&utm_medium=member_ios\n"
-
-  },
-  {
-    group: "Student committee",
-    name: "K. Chan",
-    affiliation: "Diablo Valley College"
-  },
-  {
-    group: "Student committee",
     name: "Julian Ballen",
     affiliation: "Skyline College",
     photo: "assets/team/julian-ballen.webp",
@@ -111,8 +29,41 @@ const members = [
   },
   {
     group: "Student committee",
+    name: "David Calara",
+    affiliation: "Chabot College",
+    major: "Statistics",
+    year: "Third year at community college",
+    strengths: "Community-oriented, creative, leader",
+    skills: "Communication, logistics, social media, graphic design, leadership, and active listening",
+    reliedOn: "Leadership and direction.",
+    energy: "Talking and collaborating with friends.",
+    growth: "Developing the communication skills needed to host a similar event for his student-led organization.",
+    fact: "Collects anime figurines."
+  },
+  {
+    group: "Student committee",
+    name: "K. Chan",
+    affiliation: "Diablo Valley College"
+  },
+  {
+    group: "Student committee",
+    name: "Derek Du",
+    affiliation: "Cal State East Bay",
+    photo: "assets/team/derek-du.webp",
+    major: "Computer Science",
+    year: "Senior",
+    strengths: "Reliable, analytical, detail-oriented",
+    skills: "Programming, app development, UI/UX design, event planning, project management, logistics, documentation, social media, graphic design, facilitation, mentoring, and networking",
+    reliedOn: "Troubleshooting and finding the next steps.",
+    energy: "Work where he can figure things out through trial and error.",
+    growth: "Becoming more confident speaking up and sharing ideas.",
+    fact: "Performed at the 2015 Cure Bowl halftime show as part of the SJSU Marching Band.",
+    linkedIn: "https://www.linkedin.com/in/derek-du/\n"
+  },
+  {
+    group: "Student committee",
     name: "Martin Fulgueras",
-    affiliation: "Planning Committee",
+    affiliation: "Chabot College",
     photo: "assets/team/martin-fulgueras.webp",
     major: "Mathematics",
     year: "Second year",
@@ -126,16 +77,64 @@ const members = [
   },
   {
     group: "Student committee",
-    name: "David Calara",
+    name: "Kyle Le",
+    affiliation: "Cal State East Bay",
+    photo: "assets/team/Kyle.jpeg",
+    major: "Computer Science, minor in Mathematics",
+    year: "Class of 2027",
+    strengths: "Strategic thinker, problem solver, innovative",
+    skills: "Programming, UI/UX design, graphic design, public speaking, and facilitation",
+    reliedOn: "Implementing and spitballing ideas.",
+    energy: "Intriguing work that requires critical thinking.",
+    growth: "Improving one-on-one communication and improvisation while speaking.",
+    fact: "First got into computer science by learning Java and Python.",
+    linkedIn: "https://www.linkedin.com/in/kyle-q-le/\n"
+  },
+  {
+    group: "Student committee",
+    name: "Wail Mohammed",
+    affiliation: "Cal State East Bay",
+    photo: "assets/team/wail-mohammed.webp",
+    major: "Computer Science",
+    year: "Graduating December 2026",
+    strengths: "Hardworking, fast learner, problem solver",
+    skills: "Programming, photography, documentation, communication, mentoring, teamwork, public speaking, networking, community engagement, and problem solving",
+    reliedOn: "Helping solve problems, getting things done, and supporting others when they need help.",
+    energy: "Working with people, learning new things, and contributing to projects that make a real impact.",
+    growth: "Becoming more confident speaking up, leading groups, and helping others grow as leaders.",
+    fact: "Is multilingual and has lived in or visited 11 countries across three continents.",
+    linkedIn: "https://www.linkedin.com/in/wailmohammed/\n"
+  },
+  {
+    group: "Student committee",
+    name: "Aaron Nguyen",
     affiliation: "Planning Committee",
-    major: "Statistics",
-    year: "Third year at community college",
-    strengths: "Community-oriented, creative, leader",
-    skills: "Communication, logistics, social media, graphic design, leadership, and active listening",
-    reliedOn: "Leadership and direction.",
-    energy: "Talking and collaborating with friends.",
-    growth: "Developing the communication skills needed to host a similar event for his student-led organization.",
-    fact: "Collects anime figurines."
+    photo: "assets/team/aaron-nguyen.webp",
+    major: "Data Science",
+    year: "Second year",
+    strengths: "Strategic thinker, detail-oriented, relationship builder",
+    skills: "Programming, project management, documentation, photography, recruiting, facilitation, and outreach coordination",
+    reliedOn: "Organized communication and plan implementation.",
+    energy: "Hands-on, team-oriented work.",
+    growth: "Organizing his thoughts more clearly when he is excited about an idea.",
+    fact: "Loves rock climbing and has an identical twin.",
+    linkedIn: "https://www.linkedin.com/in/aaron-nguyen22?utm_source=share_via&utm_content=profile&utm_medium=member_ios\n"
+  },
+  {
+    group: "Student committee",
+    name: "Aneesh Pradhan",
+    affiliation: "Cal State East Bay",
+    //photo: "assets/team/.jpeg",
+    major: "Computer Science",
+    year: "Senior",
+    strengths: "Creative, adaptable, analytical",
+    skills: "Programming, hardware and electronics, public speaking, volunteer outreach, research, information organization, technical problem-solving, and idea development",
+    leadershipStyle: "Presenter",
+    reliedOn: "Researching unfamiliar topics, organizing information, handling deep technical work, and developing potential ideas and solutions.",
+    energy: "Researching new topics, working on technical projects, completing repetitive tasks, organizing information, and developing solutions to complex problems.",
+    growth: "Leading complex, long-term projects through thorough planning, sustained collaboration, and attention to detail.",
+    fact: "Loves rhythm games and is working on a score tracker for one.",
+    linkedIn: "https://www.linkedin.com/in/aneeshpradhan/"
   },
   {
     group: "Advisors and campus partners",
@@ -282,6 +281,7 @@ function openMemberProfile(member) {
             ${profileField("Year", member.year)}
             ${profileField("Top strengths", member.strengths, true)}
             ${profileField("Skills", member.skills, true)}
+            ${profileField("Leadership style", member.leadershipStyle)}
             ${profileField("People rely on me for", member.reliedOn, true)}
             ${profileField("Work that gives me energy", member.energy, true)}
             ${profileField("Leadership goal", member.growth, true)}
