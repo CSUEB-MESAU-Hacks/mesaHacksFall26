@@ -79,6 +79,7 @@ const members = [
     group: "Student committee",
     name: "Kyle Le",
     affiliation: "Cal State East Bay",
+    photo: "assets/team/Kyle.jpeg",
     major: "Computer Science, minor in Mathematics",
     year: "Class of 2027",
     strengths: "Strategic thinker, problem solver, innovative",
@@ -86,7 +87,8 @@ const members = [
     reliedOn: "Implementing and spitballing ideas.",
     energy: "Intriguing work that requires critical thinking.",
     growth: "Improving one-on-one communication and improvisation while speaking.",
-    fact: "First got into computer science by learning Java and Python."
+    fact: "First got into computer science by learning Java and Python.",
+    linkedIn: "https://www.linkedin.com/in/kyle-q-le/\n"
   },
   {
     group: "Student committee",
@@ -122,6 +124,7 @@ const members = [
     group: "Student committee",
     name: "Aneesh Pradhan",
     affiliation: "Cal State East Bay",
+    //photo: "assets/team/.jpeg",
     major: "Computer Science",
     year: "Senior",
     strengths: "Creative, adaptable, analytical",
@@ -130,7 +133,8 @@ const members = [
     reliedOn: "Researching unfamiliar topics, organizing information, handling deep technical work, and developing potential ideas and solutions.",
     energy: "Researching new topics, working on technical projects, completing repetitive tasks, organizing information, and developing solutions to complex problems.",
     growth: "Leading complex, long-term projects through thorough planning, sustained collaboration, and attention to detail.",
-    fact: "Loves rhythm games and is working on a score tracker for one."
+    fact: "Loves rhythm games and is working on a score tracker for one.",
+    linkedIn: "https://www.linkedin.com/in/aneeshpradhan/"
   },
   {
     group: "Advisors and campus partners",
