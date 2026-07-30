@@ -1,680 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>     
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MESA U HACKS</title>
+    <meta
+      name="description"
+      content="MESA U Hacks 3.0 is a collaborative interdisciplinary STEM competition at Cal State East Bay, September 25–27, 2026."
+    />
+    <title>MESA U Hacks 3.0 | Fall 2026</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
-
-
   <body>
-    <!-- Desktop nav -->
-    <nav id="desktop-nav">      
-      <div class="logo">
-        <img
-          src="./assets/mesaLogo.png"
-          alt="Mesa Logo"
-          class="icon"
-          onclick="location.href='https://mesa.ucop.edu'"
-        />
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#apply">Apply</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#team-section">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="MESA U Hacks home">
+          <img src="assets/mesaLogo.png" alt="" />
+          <span>MESA U Hacks <strong>3.0</strong></span>
+        </a>
 
-    <!-- Mobile nav -->
-    <nav id="hamburger-nav">
-      <div class="logo">
-      </div>
-      <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#team">Committee</a>
+          <a class="nav-cta" href="#registration">Registration</a>
         </div>
-      </div>
-      <div class="menu-links">
-        <ul>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#apply" onclick="toggleMenu()">Apply</a></li>
-          <li><a href="#schedule" onclick="toggleMenu()">Schedule</a></li>
-          <li><a href="#team-section" onclick="toggleMenu()">Team</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-   
-    <section id="profile">
-      <div class="hero-container">
-        <div class="hero-left">
-          <h1 class="stem-education-title">Hack for STEM EDUCATION</h1>
-            <div class="about-section" style="max-width: 420px; margin-top: 18px; font-size: 1.1rem; line-height: 1.5;">
-            <p class="hero-description" style="margin: 0;">
-              A hackathon where your creative ideas become reality. 
-              The possibilities are limitless.
-              Do something you've never done before. Let's HACK!
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Cal State East Bay · Fall 2026</p>
+            <h1>Designing in Your Neighborhood</h1>
+            <p class="hero-lead">
+              Join an interdisciplinary STEM competition where students design
+              technology-enabled solutions for challenges in their neighborhoods
+              and communities.
             </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#registration">Get updates</a>
+              <a class="button button-secondary" href="#about">Explore the event</a>
             </div>
-        </div>
-        
-        <div class="hero-right">
-          <div class="section__text">
-            <h1 class="section__text__p1">SEPTEMBER 25-27, 2026</h1>
-            <div class="concept-two">
-              <div class="hover">
-                <h1>M</h1>
-              </div>
-              <div class="hover">
-                <h1>E</h1>
-              </div>
-              <div class="hover">
-                <h1>S</h1>
-              </div>
-              <div class="hover">
-                <h1>A</h1>
-              </div>
-              <div class="hover">
-                <h1>-</h1>
-              </div>
-              <div class="hover">
-                <h1>U</h1>
-              </div>
-            </div>
-            <h1 class="section__text__p2">CSU EAST BAY</h1>
-            <h2 class="section__text__p3">MESA U Hacks 2.0 coming September 25-27, 2026</h2>
+          </div>
 
-            <div id="countdown-timer">
-              <div class="time-box">
-                <span id="days" class="number">00</span>
-                <span class="label">Days</span>
-              </div>
-              <div class="time-box">
-                <span id="hours" class="number">00</span>
-                <span class="label">Hours</span>
-              </div>
-              <div class="time-box">
-                <span id="minutes" class="number">00</span>
-                <span class="label">Minutes</span>
-              </div>
+          <aside class="event-card" aria-label="Event overview">
+            <p class="event-card-label">MESA U Hacks 3.0</p>
+            <p class="event-date">September 25–27</p>
+            <p class="event-year">2026</p>
+            <div class="event-format">
+              <span><strong>Friday</strong> Virtual</span>
+              <span><strong>Sat–Sun</strong> In person</span>
             </div>
+            <div class="countdown" id="countdown-timer" aria-label="Countdown to the event">
+              <div><strong id="days">00</strong><span>Days</span></div>
+              <div><strong id="hours">00</strong><span>Hours</span></div>
+              <div><strong id="minutes">00</strong><span>Minutes</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-            <div class="btn-container">
-              <button class="btn btn-color-1" id="apply-button" onclick="scrollToApply()">
-                APPLY
-              </button>          
-              <!-- JavaScript function to scroll to the contact section -->
-              <script>
-                function scrollToApply() {
-                  // Get the element with the ID "apply"
-                  var applySection = document.getElementById('apply');
-                  // Check if the element exists
-                  if (applySection) {
-                    // Scroll to the "apply" section with a smooth behavior
-                    applySection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }     
-              </script>
-            </div>
-        
-            <div id="socials-container">
-              <img
-                src="./assets/discord-round-black-icon.png"
-                alt="Discord Icon"
-                class="icon"
-                onclick="location.href='https://discord.gg/DRM5dBdEhH'"
-              />
-        
-              <img
-                src="./assets/email.png"
-                alt="Email Icon"
-                class="icon1"
-                onclick="location.href='https://mail.google.com/mail/u/0/#inbox?compose=new&to=hackathon%40mesa.ucop.edu'"
-              />
-            </div>
+      <section class="section" id="about">
+        <div class="container split-layout">
+          <div>
+            <p class="eyebrow eyebrow-dark">About the challenge</p>
+            <h2 class="section-title">Build something that matters where you live.</h2>
+          </div>
+          <div class="prose">
+            <p>
+              MESA U Hacks 3.0 will bring together Cal State East Bay MESA
+              University students and local community college students for a
+              collaborative, interdisciplinary STEM competition.
+            </p>
+            <p>
+              Participants will work in assigned teams to design
+              technology-enabled solutions to challenges within their
+              neighborhoods and communities. Winning teams will receive prizes.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="section-wrapper about-flex">
-        <div class="section-body">
-          <h3 class="title" id="hack-title">Come Hack with Us</h3>
-          <div class="about-content-container">
-            <div class="about-text">
-              <p>A hackathon where your crazy ideas become reality. 
-                The possibilities are limitless.
-                Do something you've never done before. Let's HACK!</p>
-              <h2>Location</h2>
-              <p>MESA U HACKS will take place at <a href="https://www.csueastbay.edu/about/visitor-information/hayward-campus-map.html">California State University East Bay</a>, in Hayward Campus. The address is: <a href="https://www.google.com/maps/place/California+State+University,+East+Bay/@37.6566086,-122.0571725,17z/data=!4m10!1m2!2m1!1scsueb+address!3m6!1s0x808f938a2a66cb0f:0x6e8f52a8e9002934!8m2!3d37.6560295!4d-122.0561984!15sCg1jc3VlYiBhZGRyZXNzIgJIAZIBEXB1YmxpY191bml2ZXJzaXR54AEA!16zL20vMDJrMHBu?entry=ttu">25800 Carlos Bee Blvd, Hayward, CA 94542</a></p>
-              <p> <a href='https://discord.gg/DRM5dBdEhH'><strong>CSUEB MESA Discord Link</strong></a></p>
-              <p>See you there!</p>
-            </div>
-          </div>
-        </div>
-        <div class="section-image">
-          <img src="./assets/mesau.webp" alt="MESA-U group">
-        </div>
-      </div>
-    </section>
 
-    <!-- Previous Hackathon Photos Section -->
-    <div class="section-wrapper">
-      <section id="previous-hackathon">
-        <h1 class="title">Previous Hackathon Highlights</h1>
-        <p class="section-description">Check out the amazing moments from our last MESA U Hacks event!</p>
-        
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <img src="./assets/pastHack1.webp" alt="Students winning iPads" class="gallery-img" />
-            <p class="gallery-caption">Students winning iPads at the awards ceremony</p>
+        <div class="container info-grid">
+          <article class="info-card">
+            <h3>Collaborate</h3>
+            <p>Work in teams alongside students from multiple campuses.</p>
+          </article>
+          <article class="info-card">
+            <h3>Design</h3>
+            <p>Turn a real community challenge into a technology-enabled solution.</p>
+          </article>
+          <article class="info-card">
+            <h3>Present</h3>
+            <p>Share your work, learn from other teams, and compete for prizes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="highlights">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">MESA U Hacks 2.0 · 2025</p>
+            <h2 class="section-title">Last year in action</h2>
           </div>
-          <div class="gallery-item">
-            <img src="./assets/pastHack2.webp" alt="Students hacking" class="gallery-img" />
-            <p class="gallery-caption">Students collaborating during the hackathon</p>
+          <p>
+            A look back at two days of teamwork, presentations, learning, and
+            celebration.
+          </p>
+        </div>
+
+        <div class="container gallery-grid">
+          <figure class="gallery-card gallery-wide">
+            <img src="assets/2025_gallery/20250913-001-104.webp" alt="Students collaborating around laptops during MESA U Hacks 2025" loading="lazy" />
+            <figcaption>Ideas taking shape</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/2025_gallery/20250913-001-116.webp" alt="A student team working together at a table" loading="lazy" />
+            <figcaption>Teamwork in action</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/2025_gallery/20250913-001-130.webp" alt="Participants working throughout the event space" loading="lazy" />
+            <figcaption>A room full of builders</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/2025_gallery/20250914-001-13.webp" alt="The MESA U Hacks event room filled with participants" loading="lazy" />
+            <figcaption>Community on campus</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/2025_gallery/20250914-001-21.webp" alt="Audience listening to a MESA U Hacks presentation" loading="lazy" />
+            <figcaption>Learning together</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-wide">
+            <img src="assets/2025_gallery/20250914-001-35.webp" alt="Award recipients holding certificates at MESA U Hacks" loading="lazy" />
+            <figcaption>Celebrating the winners</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-43.webp" alt="A winning team posing on stage" loading="lazy" />
+            <figcaption>Built with purpose</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-59.webp" alt="An organizer presenting a medal to a participant" loading="lazy" />
+            <figcaption>Recognizing achievement</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-70.webp" alt="A team presenting its project at the front of the room" loading="lazy" />
+            <figcaption>Sharing the solution</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-75-2.webp" alt="MESA U Hacks organizers posing near the stage" loading="lazy" />
+            <figcaption>The people behind the event</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-82-2.webp" alt="A participant speaking during a presentation" loading="lazy" />
+            <figcaption>Finding your voice</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-extra">
+            <img src="assets/2025_gallery/20250914-001-93.webp" alt="Students discussing their work around a table" loading="lazy" />
+            <figcaption>Connections that last</figcaption>
+          </figure>
+        </div>
+        <div class="container gallery-action">
+          <button class="button button-outline" id="gallery-toggle" type="button" aria-expanded="false">
+            View more moments
+          </button>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="schedule">
+        <div class="container section-heading section-heading-light">
+          <div>
+            <p class="eyebrow">Save the dates</p>
+            <h2 class="section-title">Three days. One shared challenge.</h2>
           </div>
-          <div class="gallery-item">
-            <img src="./assets/pastHack3.webp" alt="Guest speakers" class="gallery-img" />
-            <p class="gallery-caption">Guest speakers sharing insights with participants</p>
+          <p>The detailed agenda and room information will be announced soon.</p>
+        </div>
+
+        <div class="container schedule-grid">
+          <article class="schedule-card">
+            <div class="schedule-date"><span>SEP</span><strong>25</strong></div>
+            <div>
+              <p class="schedule-day">Friday</p>
+              <h3>Virtual kickoff</h3>
+              <p>Welcome, challenge introduction, and team activities online.</p>
+            </div>
+          </article>
+          <article class="schedule-card">
+            <div class="schedule-date"><span>SEP</span><strong>26</strong></div>
+            <div>
+              <p class="schedule-day">Saturday</p>
+              <h3>Build in person</h3>
+              <p>Competition activities at Cal State East Bay's Hayward campus.</p>
+            </div>
+          </article>
+          <article class="schedule-card">
+            <div class="schedule-date"><span>SEP</span><strong>27</strong></div>
+            <div>
+              <p class="schedule-day">Sunday</p>
+              <h3>Present and celebrate</h3>
+              <p>Final presentations, judging, awards, and closing activities.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="container location-card">
+          <div>
+            <p class="eyebrow">In-person location</p>
+            <h3>California State University, East Bay</h3>
+            <p>25800 Carlos Bee Blvd, Hayward, CA 94542</p>
           </div>
-          <div class="gallery-item">
-            <img src="./assets/pastHack4.webp" alt="Students coding" class="gallery-img" />
-            <p class="gallery-caption">Focused students working on their projects</p>
+          <a
+            class="button button-secondary"
+            href="https://www.csueastbay.edu/about/visitor-information/hayward-campus-map.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View campus map</a>
+        </div>
+      </section>
+
+      <section class="section" id="team">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">Meet the committee</p>
+            <h2 class="section-title">Students building the experience</h2>
+          </div>
+          <p>Select a profile photo to learn about each member's background, strengths, and goals.</p>
+        </div>
+        <div class="container team-grid" id="team-grid"></div>
+      </section>
+
+      <section class="section registration" id="registration">
+        <div class="container registration-card">
+          <div>
+            <p class="eyebrow">Coming Fall 2026</p>
+            <h2>Registration opens soon.</h2>
+            <p>
+              Check back for eligibility, registration, and detailed event
+              information. Join the MESA U Discord for community updates.
+            </p>
+          </div>
+          <div class="registration-actions">
+            <a class="button button-primary" href="https://discord.gg/DRM5dBdEhH" target="_blank" rel="noopener noreferrer">Join Discord</a>
+            <a class="button button-secondary" href="mailto:csuebmesau@gmail.com">Email the team</a>
           </div>
         </div>
       </section>
-    </div>
 
-  <section id="apply" class="bounce-top">
-    <h1 class="title">
-    	Registration
-    </h1>
-    <hr>
-		<div class="register-btn-container">
-			<button class="registration-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe9mGMe0qcd5WD2Dx1-NF14Mfkl4usv_jT4biffwe7TatLQ8w/viewform?pli=1';">
-				Click Here
-			</button>
-		</div>
-
-	</section>
-  
- <section id="schedule">
-    <p class="section__text__p1">Save The Dates</p>
-    <h1 class="title">Schedule</h1>
-    <div class="dates-container">
-      <div class="date-box">
-        <h2>Saturday</h2>
-        <h3>September 13, 2025</h3>
-        <h4>Day 1 Schedule</h4>
-        <div class="schedule-details">
-          <p><strong>8:30 AM - 9:00 AM:</strong> Check-in + Breakfast - MPR</p>
-          <p><strong>9:00 AM - 9:30 AM:</strong> Starting Commencement - MPR</p>
-          <p><strong>10:00 AM:</strong> Hacking Start - MPR</p>
-          <p><strong>10:00 AM - 11:00 AM:</strong> Git & Github Workshop - Bayview Room</p>
-          <p><strong>11:00 AM - 1:00 PM:</strong> Lunch @ Dining Commons</p>
-          <p><strong>1:00 PM - 1:45 PM:</strong> How to Pitch a Project Workshop - Bayview Room</p>
-          <p><strong>2:00 PM - 3:00 PM:</strong> Python Workshop - Bayview Room</p>
-          <p><strong>3:00 PM - 4:00 PM:</strong> Intro to UI/UX Workshop - Bayview Room</p>
-          <p><strong>4:45 PM - 5:00 PM:</strong> Clean up</p>
-        </div>
-      </div>
-      <div class="date-box">
-        <h2>Sunday</h2>
-        <h3>September 14, 2025</h3>
-        <h4>Day 2 Schedule</h4>
-        <div class="schedule-details">
-          <p><strong>8:00 AM - 8:30 AM:</strong> Check in + Breakfast - MPR</p>
-          <p><strong>10:00 AM:</strong> Hacking Ends + Submissions due - MPR</p>
-          <p><strong>10:00 AM - 10:15 AM:</strong> Submission Help window - MPR</p>
-          <p><strong>10:15 AM - 11:00 AM:</strong> Presentations Start</p>
-          <p><strong>11:00 AM - 12:30 PM:</strong> Lunch @ Dining Commons</p>
-          <p><strong>12:30 PM - 3:00 PM:</strong> Presentations Continue - MPR</p>
-          <p><strong>3:00 PM - 4:00 PM:</strong> Judging - Bayview Room</p>
-          <p><strong>4:00 PM - 4:30 PM:</strong> Winner Announcement - MPR</p>
-          <p><strong>4:30 PM - 4:45 PM:</strong> Closing Commencement - MPR</p>
-          <p><strong>4:45 PM - 5:00 PM:</strong> Clean up</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="theme-categories">
-    <div class="theme-section">
-      <h1 class="title">Hackathon Theme</h1>
-      <h2 class="theme-title">Designing in Your Neighborhood</h2>
-      <div class="theme-description">
-        <p>Build tools/applications that make learning STEM subjects more engaging and accessible for all.</p>
-      </div>
-    </div>
-
-    <div class="categories-section">
-      <h1 class="title">Prize Categories</h1>
-      <div class="categories-container">
-        <div class="category-box">
-          <h3>Best Hack for STEM Education</h3>
-          <p>Highlights the project that best advances STEM education by making concepts more accessible, interactive, or inspiring.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>11" iPad</p>
+      <section class="section" id="faq">
+        <div class="container faq-layout">
+          <div>
+            <p class="eyebrow eyebrow-dark">Good to know</p>
+            <h2 class="section-title">Frequently asked questions</h2>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Who is the event for?<span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The event is being planned for Cal State East Bay MESA
+                  University students and students from participating local
+                  community colleges. Full eligibility details are coming soon.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                What is the design challenge?<span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Teams will design technology-enabled solutions to challenges
+                  within their neighborhoods and communities.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                When does registration open?<span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Registration details will be posted here as soon as they are available.</p>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="category-box">
-          <h3>Best Beginners Project</h3>
-          <p>Celebrates the strongest project built by first time hackers or those new to coding, showcasing creativity and learning.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>LeetCode Premium (1 year subscription)</p>
-          </div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/smallLogo.png" alt="MESA U Hacks" />
+          <p>Designing in Your Neighborhood</p>
         </div>
-
-        <div class="category-box">
-          <h3>Best Pitch</h3>
-          <p>Recognizes the team that delivers the clearest, most compelling, and engaging presentation of their idea.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>$100 Amazon Gift Card</p>
-          </div>
+        <div>
+          <p class="footer-label">Connect</p>
+          <a href="mailto:csuebmesau@gmail.com">Email</a>
+          <a href="https://discord.gg/DRM5dBdEhH" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://www.instagram.com/mesa.u.hacks/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/mesa-u-hacks-50aaa92a6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-
-        <div class="category-box">
-          <h3>Best AI Integration</h3>
-          <p>Awarded to the project that most creatively and effectively incorporates artificial intelligence to enhance STEM learning or problem solving.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>LeetCode Premium (1 year subscription)</p>
-          </div>
-        </div>
-
-        <div class="category-box">
-          <h3>Best UI/UX</h3>
-          <p>Honors the project with the most intuitive, accessible, and visually appealing user experience and design.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>Mechanical Keyboard</p>
-          </div>
-        </div>
-
-        <div class="category-box">
-          <h3>Best Data Visualization</h3>
-          <p>Given to the project that most effectively turns complex data into clear, engaging, and meaningful insights.</p>
-          <div class="prize">
-            <h4>Prize:</h4>
-            <p>$100 Amazon Gift Card</p>
-          </div>
-        </div>
+        <p class="footer-note">Made by the MESA U Hacks planning committee.</p>
       </div>
-    </div>
-  </section>
-
-<!-- Team Section -->
-<section class="container column" id="team-section">
-  <h1 class="title">Meet the 2025 Committee</h1>
-  <!-- Individual Team Members -->
-  <div class="container row" id="project-container">
-
-    <!-- Row 1 - First 5 Members -->
-    <div class="team-row">
-      <!-- Zoheb Sharif -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/Zoheb.webp" alt="Zoheb Sharif">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/zohebsharif/" target="_blank" rel="noopener noreferrer">Zoheb Sharif</a>
-            </h2>
-            <p><strong>Lead</strong></p>
-            <p>Student</p>
-            <i>CSU East Bay</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Monica Rico -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/monica.webp" alt="Monica Rico">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/mon-rico/" target="_blank" rel="noopener noreferrer">Monica Rico</a>
-            </h2>
-            <p><strong>Lead</strong></p>
-            <p>Student</p>
-            <i>CSU East Bay</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Josiah -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/Josiah.webp" alt="Josiah">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/josiah-troup-95a45532a/" target="_blank" rel="noopener noreferrer">Josiah Troup</a>
-            </h2>
-            <p>Student</p>
-            <i>CSU East Bay</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Jacob -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/Jacob.webp" alt="Jacob">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/jacob-ativo-awesome-programmer/" target="_blank" rel="noopener noreferrer">Jacob Ativo</a>
-            </h2>
-            <p>Student</p>
-            <i>CSU East Bay</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Wail -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/Wail.webp" alt="Wail">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/wailmohammed/" target="_blank" rel="noopener noreferrer">Wail Mohammed</a>
-            </h2>
-            <p>Student</p>
-            <i>CSU East Bay</i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 2 - Next 5 Members -->
-    <div class="team-row">
-      <!-- Livia Yang (Lead) -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/placeholder.webp" alt="Livia Yang">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="#" target="_blank" rel="noopener noreferrer">Livia Yang</a>
-            </h2>
-            <p><strong>Lead</strong></p>
-            <p>Student</p>
-            <i>Diablo Valley College</i>
-          </div>
-        </div>
-      </div>
- 
-      <!-- Christian Aguilar (Lead) -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/placeholder.webp" alt="Christian Aguilar">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="#" target="_blank" rel="noopener noreferrer">Christian Aguilar</a>
-            </h2>
-            <p><strong>Lead</strong></p>
-            <p>Student</p>
-            <i>Diablo Valley College</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Noel Amankrah-Bonsu -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/placeholder.webp" alt="Noel Amankrah-Bonsu">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="#" target="_blank" rel="noopener noreferrer">Noel Amankrah-Bonsu</a>
-            </h2>
-            <p>Student</p>
-            <i>Skyline College</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Jhoselin Escobar Rodriguez -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/placeholder.webp" alt="Jhoselin Escobar Rodriguez">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="#" target="_blank" rel="noopener noreferrer">Jhoselin Escobar Rodriguez</a>
-            </h2>
-            <p>Student</p>
-            <i>Skyline College</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arturo Irias -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/arturo.webp" alt="Arturo Irias">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/arturo-irias-7b3574273/" target="_blank" rel="noopener noreferrer">Arturo Irias</a>
-            </h2>
-            <p>Student</p>
-            <i>Diablo Valley College</i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 3 - Last 3 Members -->
-    <div class="team-row">
-      <!-- Chris Wu -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/placeholder.webp" alt="Chris Wu">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="#" target="_blank" rel="noopener noreferrer">Chris Wu</a>
-            </h2>
-            <p>Student</p>
-            <i>Diablo Valley College</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Eli Chavez -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/elisha.webp" alt="Elisha Chavez">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/elisha-chavez-835214356/" target="_blank" rel="noopener noreferrer">Elisha Chavez</a>
-            </h2>
-            <p>Student</p>
-            <i>Chabot College</i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Stephanie Burciaga -->
-      <div class="each-project grads">
-        <img class="proj-img" src="assets/stephanie.webp" alt="Stephanie Burciaga">
-        <div class="proj-description container column">
-          <div class="img-description">
-            <h2>
-              <a href="https://www.linkedin.com/in/srciaga/" target="_blank" rel="noopener noreferrer">Stephanie Burciaga</a>
-            </h2>
-            <p>Student</p>
-            <i>Chabot College</i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="faq-section" class="faq">
-  <h1 class="title">Frequently Asked Questions</h1>
-  <div class="faq-container">
-    <div class="faq-item">
-      <button class="faq-question">What is the purpose of MESA Hacks?</button>
-      <div class="faq-answer">
-        <p>This hackathon hosted by CSU East Bay and our local community colleges is intended to encourage students at all skill levels to collaborate and get project experience. 
-			Whether you're a freshman with no experience or a senior with a few projects under your belt, this event is for you! </p>
-        <br>
-        <p>There will also be several workshops over
-        the weekend designed to help you not just with the hackathon projects but to help make you better programmers overall. </p>
-        </p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Who can participate in MESA U Hacks?</button>
-      <div class="faq-answer">
-        <p>For Cal State East Bay students: Priority will be given to MESA U members, then any Computer Science, Computer Engineering, or Data Science majors. 
-			If you would like to join MESA U, <a href='https://mesa.my.site.com/s/login/?ec=302&startURL=%2Fs%2F' class="apply-btn">apply here</a>.</p>
-        <p>For local community college students: Any student, but with priority given to MESA students</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Can I create my project before the start of the hackathon?</button>
-      <div class="faq-answer">
-        <p>No, competitors cannot work on their project prior to the beginning of the event although brainstorming potential ideas is allowed.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">How many members can make up a team?</button>
-      <div class="faq-answer">
-        <p>Each team can have up to 4 people.</p>
-      </div>
-  </div>
-
-    <div class="faq-item">
-    <button class="faq-question">Are full teams required?</button>
-    <div class="faq-answer">
-      <p>No, you can compete solo if you'd like but there will be opening activities to aid in the team creation process.</p>
-    </div>
-  </div>
-    <div class="faq-item">
-      <button class="faq-question">Will there be food provided?</button>
-      <div class="faq-answer">
-        <p>Yes, there will be plenty of food and snacks throughout the event provided by CSU East Bay's dining commons! Refer to the schedule for breakfast and lunch times. </p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">What should you bring?</button>
-      <div class="faq-answer">
-        <p>A laptop or device capable of coding is essential. We also recommend bringing:</p>
-        <ul>
-          <li>Laptop charger</li>
-          <li>Any cables or adapters you might need</li>
-          <li>A water bottle to stay hydrated</li>
-        </ul>
-      </div>
-    </div>
-
-</section>
-
-    <section id="contact">
-     
-      <h1 class="title">Contact Us</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email Icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:csuebmesau@gmail.com">EMAIL</a></p>
-        </div>
-		<div class="contact-info-container">
-			<img
-				src="./assets/discord-round-black-icon.png"
-				alt="Discord Icon"
-				class="icon contact-icon"
-				onclick="location.href='https://discord.gg/DRM5dBdEhH'"
-			/>
-			<p><a hreF="http://discord.gg/DRM5dBdEhH">DISCORD</a></p>
-		</div>
-        <!-- <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn Icon"
-            class="icon contact-icon"
-          />
-          <p><a href='https://www.linkedin.com/in/mesa-u-hacks-50aaa92a6/'>LinkedIn</a></p>
-        </div> -->
-
-        <!-- <div class="contact-info-container">
-          <img
-            src="./assets/ig.png"
-            alt="Instagram Icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.instagram.com/mesa.u.hacks/">Instagram</a></p>
-        </div> -->
-
-
-    </section>
-
-        
-    </div>
-
-
-
-    <footer>
-		    <div class="section__pic1-container">
-          <img src="./assets/smallLogo.png" alt="MESA U Hacks Logo" />
-        </div>
-      <p>Made by MESA U HACKS Team </p>
     </footer>
+
+    <dialog class="member-dialog" id="member-dialog" aria-labelledby="dialog-name">
+      <button class="dialog-close" type="button" aria-label="Close member profile">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+
     <script src="script.js"></script>
   </body>
-
 </html>
-
-
- <!-- Peter <div class="each-project grads">
-    <img class="proj-img" src="assets/peter.webp" alt="Peter">
-    <div class="proj-description container column">
-      <div class="img-description">
-        <h2>
-          <a href="https://www.linkedin.com/in/petercrackthecode/" target="_blank" rel="noopener noreferrer">Peter Nguyen</a>
-        </h2>
-        <p>Computer Science Student</p>
-        <i>CSU East Bay</i>
-      </div>
-    </div>
-  </div>
-  -->
-
-  
-<!-- Alex Torres 
- 
-<div class="each-project grads">
-  <img class="proj-img" src="assets/alex.webp" alt="Alex Torres">
-  <div class="proj-description container column">
-    <div class="img-description">
-      <h2>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Alex Torres</a>
-      </h2>
-      <p>Graduated from Wesleyan University</p>
-      <i>BA in Mathematics (and French Studies) </i>
-    </div>
-  </div>
-</div>
--->
