@@ -340,29 +340,33 @@ function updateCountdown() {
   const days = Math.floor(remaining / 86_400_000);
   const hours = Math.floor((remaining % 86_400_000) / 3_600_000);
   const minutes = Math.floor((remaining % 3_600_000) / 60_000);
-
+  const seconds = Math.floor((remaining % 60_000) / 1000);
   const dayElement = document.getElementById("days");
   const hourElement = document.getElementById("hours");
   const minuteElement = document.getElementById("minutes");
-  if (!dayElement || !hourElement || !minuteElement) return;
+  const secondElement = document.getElementById("seconds");
+
+  if (!dayElement || !hourElement || !minuteElement || !secondElement) return;
 
   dayElement.textContent = String(days);
   hourElement.textContent = String(hours).padStart(2, "0");
   minuteElement.textContent = String(minutes).padStart(2, "0");
+  secondElement.textContent = String(seconds).padStart(2, "0");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderTeam();
-  setupNavigation();
-  setupFaq();
-  setupGallery();
   updateCountdown();
-  window.setInterval(updateCountdown, 60_000);
+  window.setInterval(updateCountdown, 1000);
+
+  if (typeof renderTeam === "function") renderTeam();
+  if (typeof setupNavigation === "function") setupNavigation();
+  if (typeof setupFaq === "function") setupFaq();
+  setupGallery();
 
   const grid = document.getElementById("team-grid");
   grid?.addEventListener("click", event => {
     const trigger = event.target.closest("[data-member-index]");
-    if (!trigger) return;
+    if (!trigger || typeof members === "undefined") return;
     openMemberProfile(members[Number(trigger.dataset.memberIndex)]);
   });
 
