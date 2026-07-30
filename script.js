@@ -169,7 +169,7 @@ const members = [
     group: "Lead Organizers",
     name: "Travis Nelson",
     affiliation: "Cal State East Bay",
-    photo: "assets/team/Travis.jpg",
+    photo: "assets/team/Travis3.webp",
     major: "Sociology B.A., Organization & Leadership M.A.",
     year: "Graduated",
     strengths: "Creative, public speaker, fast learner",
