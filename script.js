@@ -108,7 +108,7 @@ const members = [
   {
     group: "Student committee",
     name: "Aaron Nguyen",
-    affiliation: "Planning Committee",
+    affiliation: "Diablo Valley College",
     photo: "assets/team/aaron-nguyen.webp",
     major: "Data Science",
     year: "Second year",

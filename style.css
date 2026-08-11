@@ -825,8 +825,14 @@ textarea {
   transition: grid-template-rows 240ms ease;
 }
 
-.faq-answer > p {
+.faq-answer > article {
   overflow: hidden;
+}
+
+.faq-answer ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 0;
 }
 
 .faq-item > button[aria-expanded="true"] + .faq-answer {
