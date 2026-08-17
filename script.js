@@ -139,7 +139,9 @@ const members = [
   {
     group: "Advisors and campus partners",
     name: "Brandy Gibson",
-    affiliation: "Diablo Valley College"
+    affiliation: "Diablo Valley College",
+    year: "Graduated",
+    linkedIn: "https://www.linkedin.com/in/brandy-gibson-3405609b/"
   },
   {
     group: "Advisors and campus partners",
@@ -152,12 +154,14 @@ const members = [
     reliedOn: "Organizing and planning events and workshops.",
     energy: "Working with people and helping students.",
     growth: "Continuing to become a better leader.",
-    fact: "Collects comics, draws and paints, and is a huge Star Wars fan."
+    fact: "Collects comics, draws and paints, and is a huge Star Wars fan.",
+    linkedIn: "https://www.linkedin.com/in/sean-rodriguez-a231542/"
   },
   {
     group: "Advisors and campus partners",
     name: "Denise Hum",
-    affiliation: "Skyline College"
+    affiliation: "Skyline College",
+    linkedIn: "https://www.linkedin.com/in/denisehum/"
   },
   {
     group: "Advisors and campus partners",
@@ -268,7 +272,7 @@ function openMemberProfile(member) {
   if (!dialog || !content) return;
 
   const cleanLinkedIn = member.linkedIn ? member.linkedIn.trim() : null;
-  const hasProfile = Boolean(member.major || member.strengths || member.skills);
+  const hasProfile = Boolean(member.major || member.strengths || member.skills) || member.linkedIn;
   content.innerHTML = `
     <div class="dialog-profile">
       <div class="dialog-photo">${photoMarkup(member)}</div>
