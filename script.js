@@ -15,20 +15,6 @@ const members = [
   },
   {
     group: "Student committee",
-    name: "Stephanie Burciaga",
-    affiliation: "Chabot College",
-    photo: "assets/stephanie.webp",
-    major: "Computer Science, previously Graphic Design",
-    year: "Second year in Computer Science",
-    strengths: "Creative, organized, calm under pressure",
-    skills: "Programming, web development, UI/UX design, and graphic design",
-    reliedOn: "Staying on track and meeting deadlines.",
-    energy: "Creative tasks and helping others.",
-    growth: "Public speaking and giving presentations, especially for workshops.",
-    fact: "Tries to read at least 30 books each year and once read almost 100."
-  },
-  {
-    group: "Student committee",
     name: "David Calara",
     affiliation: "Chabot College",
     major: "Statistics",
