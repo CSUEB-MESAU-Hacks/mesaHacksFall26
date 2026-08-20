@@ -110,7 +110,7 @@ const members = [
     group: "Student committee",
     name: "Aneesh Pradhan",
     affiliation: "Cal State East Bay",
-    //photo: "assets/team/.jpeg",
+    photo: "assets/team/Aneesh.jpeg",
     major: "Computer Science",
     year: "Senior",
     strengths: "Creative, adaptable, analytical",
