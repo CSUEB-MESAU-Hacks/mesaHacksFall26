@@ -2,6 +2,7 @@ const members = [
   {
     group: "Student committee",
     name: "Julian Ballen",
+    role: "Registration & Check-In Lead",
     affiliation: "Skyline College",
     photo: "assets/team/julian-ballen.webp",
     major: "Computer Science",
@@ -16,7 +17,9 @@ const members = [
   {
     group: "Student committee",
     name: "David Calara",
+    role: "Event Director",
     affiliation: "Chabot College",
+    photo: "assets/team/david.png",
     major: "Statistics",
     year: "Third year at community college",
     strengths: "Community-oriented, creative, leader",
@@ -28,12 +31,13 @@ const members = [
   },
   {
     group: "Student committee",
-    name: "K. Chan",
+    name: "Keng Chan",
     affiliation: "Diablo Valley College"
   },
   {
     group: "Student committee",
     name: "Derek Du",
+    role: "Technical Support Lead",
     affiliation: "Cal State East Bay",
     photo: "assets/team/derek-du.webp",
     major: "Computer Science",
@@ -49,6 +53,7 @@ const members = [
   {
     group: "Student committee",
     name: "Martin Fulgueras",
+    role: "Operations Lead & Stage Manager",
     affiliation: "Chabot College",
     photo: "assets/team/martin-fulgueras.webp",
     major: "Mathematics",
@@ -64,6 +69,7 @@ const members = [
   {
     group: "Student committee",
     name: "Kyle Le",
+    role: "Design Challenge Lead",
     affiliation: "Cal State East Bay",
     photo: "assets/team/Kyle.jpeg",
     major: "Computer Science, minor in Mathematics",
@@ -79,6 +85,7 @@ const members = [
   {
     group: "Student committee",
     name: "Wail Mohammed",
+    role: "Marketing & Social Media/Discord Lead",
     affiliation: "Cal State East Bay",
     photo: "assets/team/wail-mohammed.webp",
     major: "Computer Science",
@@ -94,6 +101,7 @@ const members = [
   {
     group: "Student committee",
     name: "Aaron Nguyen",
+    role: "Marketing & Social Media/Discord Lead",
     affiliation: "Diablo Valley College",
     photo: "assets/team/aaron-nguyen.webp",
     major: "Data Science",
@@ -109,6 +117,7 @@ const members = [
   {
     group: "Student committee",
     name: "Aneesh Pradhan",
+    role: "Volunteer Judge Coordinator",
     affiliation: "Cal State East Bay",
     photo: "assets/team/Aneesh.jpeg",
     major: "Computer Science",
@@ -267,6 +276,7 @@ function openMemberProfile(member) {
         <p class="dialog-meta">${escapeHtml(member.affiliation)}</p>
         ${hasProfile ? `
           <dl class="profile-fields">
+            ${profileField("Hackathon Role", member.role)}
             ${profileField("Major", member.major)}
             ${profileField("Year", member.year)}
             ${profileField("Top strengths", member.strengths, true)}
