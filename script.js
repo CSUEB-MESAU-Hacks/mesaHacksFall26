@@ -19,7 +19,7 @@ const members = [
     name: "David Calara",
     role: "Event Director",
     affiliation: "Chabot College",
-    photo: "assets/team/david.png",
+    photo: "assets/team/David.png",
     major: "Statistics",
     year: "Third year at community college",
     strengths: "Community-oriented, creative, leader",
