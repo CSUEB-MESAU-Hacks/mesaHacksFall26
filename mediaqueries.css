@@ -190,6 +190,14 @@
     padding: 24px;
   }
 
+  .countdown div {
+    padding-inline: 2px;
+  }
+
+  .countdown span {
+    font-size: 0.62rem;
+  }
+
   .event-year {
     font-size: 4rem;
   }
@@ -244,5 +252,15 @@
 
   .footer-note {
     grid-column: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .countdown strong {
+    font-size: 1.3rem;
+  }
+
+  .countdown span {
+    font-size: 0.56rem;
   }
 }
