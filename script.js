@@ -27,7 +27,8 @@ const members = [
     reliedOn: "Leadership and direction.",
     energy: "Talking and collaborating with friends.",
     growth: "Developing the communication skills needed to host a similar event for his student-led organization.",
-    fact: "Collects anime figurines."
+    fact: "Collects anime figurines.",
+    linkedIn: "https://www.linkedin.com/in/david-calara/\n"
   },
   {
     group: "Student committee",
