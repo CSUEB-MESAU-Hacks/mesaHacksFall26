@@ -361,7 +361,7 @@ textarea {
 
 .countdown {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   margin-top: 26px;
   overflow: hidden;
@@ -370,6 +370,7 @@ textarea {
 }
 
 .countdown div {
+  min-width: 0;
   padding: 14px 4px;
   background: rgba(11, 31, 25, 0.68);
   text-align: center;
@@ -382,6 +383,8 @@ textarea {
 
 .countdown strong {
   font-size: 1.45rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .countdown span {
@@ -389,6 +392,7 @@ textarea {
   font-size: 0.68rem;
   font-weight: 600;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .section {
