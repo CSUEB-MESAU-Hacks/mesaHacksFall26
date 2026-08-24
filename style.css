@@ -361,7 +361,12 @@ textarea {
 
 .countdown {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr)
+    minmax(0, 1.1fr);
+  width: 100%;
   gap: 1px;
   margin-top: 26px;
   overflow: hidden;
@@ -391,6 +396,7 @@ textarea {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.68rem;
   font-weight: 600;
+  line-height: 1.35;
   text-transform: uppercase;
   white-space: nowrap;
 }
