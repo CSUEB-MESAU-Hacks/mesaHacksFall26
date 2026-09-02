@@ -33,7 +33,15 @@ const members = [
   {
     group: "Student committee",
     name: "Keng Chan",
-    affiliation: "Diablo Valley College"
+    role: "Event Director",
+    affiliation: "Diablo Valley College",
+    photo: "assets/team/Keng.jpg",
+    major: "Cognitive Science",
+    year: "Second year at community college",
+    strengths: "Creative, Adaptable, Detail-Oriented",
+    skills: "Programming, UI/UX Design Social Media, Graphic Design Content Creation, Documentation",
+    growth: "Developing the communication skills needed to host a similar event for his student-led organization.",
+    linkedIn: "https://www.linkedin.com/in/keng-c-chan-9b76bb40b/\n"
   },
   {
     group: "Student committee",
